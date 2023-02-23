@@ -34,32 +34,42 @@
         <form id="form_container" action="./contato.html">
 
             <div class="form_box" id="form_box_name">
-
-                <label for="form_name">Nome completo</label>
-                <div id="form_name_container">
                 
-                    <input id="form_name" type="text" placeholder="Primeiro nome">
-                    <input id="form_last_name" type="text" placeholder="Ultimo nome">
-            
+                <label for="form_name">Nome completo</label>
+
+                <div id="form_name_container">
+                    <div class="input_block_name">
+                        <input id="form_name" type="text" placeholder="Primeiro nome">
+                    </div>
+                    <div class="input_block_name">
+                        <input id="form_last_name" type="text" placeholder="Ultimo nome">
+                    </div>
                 </div>
                 
             </div>
             <div class="form_box" id="form_box_email">
 
                 <label for="form_email">Email</label>
-                <input id="form_email" type="email" placeholder="Insira um email valido">
+                
+                <div class="input_block">
+                    <input id="form_email" type="email" placeholder="Insira um email valido">
+                </div>
             
             </div>
             <div class="form_box" id="form_box_tel">
-
+                
                 <label for="form_tel">Numero de telefone</label>
-                <input id="form_tel" type="tel" placeholder="Numero do telefone">
+                <div class="input_block">
+                    <input id="form_tel" type="tel" placeholder="Numero do telefone">
+                </div>
             
             </div>
             <div class="form_box" id="form_box_text">
 
                 <label for="form_text">Contate-nos</label>
-                <input id="form_text" type="text" placeholder="Motivo para contato">
+                <div class="input_block">
+                    <input id="form_text" type="text" placeholder="Motivo para contato">
+                </div>
             
             </div>
             
