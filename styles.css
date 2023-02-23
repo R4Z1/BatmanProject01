@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: champagne;
+    src: url("./fonts/Champagne_Bold.ttf");
+}
+@font-face {
+    font-family: renaissance;
+    src: url("./fonts/Renaissance.ttf");
+}
+@font-face {
+    font-family: batman_font_1;
+    src: url("./fonts/Batman_1.ttf");
+}
+@font-face {
+    font-family: batman_font_2;
+    src: url("./fonts/Batman_Robinson.ttf");
+}
+body {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li {
+    font-family: batman_font_2,sans-serif;
+    color: aliceblue;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+li:hover {
+    color: rgb(230, 0, 0);
+    font-size: 27px;
+}
+#batman_logo {
+    height: 75%;
+    width: auto;
+}
+#banner {
+    background-image: url("./media/batman_banner.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 400px;
+}
+#trailer_container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trailer {
+    width: 60%;
+    height: auto;
+}
+#sinopse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.description {
+    font-family: champagne,sans-serif;
+    font-size: 18px;
+    color: aliceblue;
+    width: 80%;
+}
+.button {
+    font-family: champagne,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 50px;
+    background-color: rgb(230, 0, 0);
+    margin-top: 25px;
+    margin-left: 30px;
+    color: #fff;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.actor_cards_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards_content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
+}
+.card {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 40px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: champagne, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.5px;   
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.poster_1 {
+    background-image: url("./media/batman_poster.jpg");
+}
+.poster_1:hover {
+    background-image: url("./media/robert_pattinson.jpg");
+}
+.poster_2 {
+    background-image: url("./media/mulher_gato_poster.jpg");
+}
+.poster_2:hover {
+    background-image: url("./media/zoe-kravitz2.jpg");
+}
+.poster_3 {
+    background-image: url("./media/charada_poster.jpg");
+}
+.poster_3:hover {
+    background-image: url("./media/paul_dano.jpg");
+}
+.poster_4 {
+    background-image: url("./media/penguin_poster.jpg");
+}
+.poster_4:hover {
+    background-image: url("./media/colin_farrell.jpg");
+}
+footer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#footer_logo {
+    width: auto;
+    height: 80px;
+}
+.footer_navigation {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.footer_list {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+    font-family: champagne, sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+@media(max-width: 768px){
+    footer {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer_navigation {
+        display: flex;
+        margin-top: 10px;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 55%;
+        height: 300px;
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #sinopse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #trailer_container {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        margin-left: 0px;
+    }
+    .trailer {
+        width: 90%;
+        height: 400px;
+    }
+
+    .cards_content {
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .actor_cards_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    li {
+        font-size: 20px;
+    }
+}
+#contact_container {
+    background-color: rgb(17, 17, 17);
+    width: 80%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+#form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(51, 51, 51);
+}
+#contact_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 60px;
+    width: 400px;
+    background-color: rgb(48, 48, 48);
+}
+label {
+    margin-left: 2px;
+}
+.form_box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 50px;
+    font-family: champagne, sans-serif;
+    font-size: 20px;
+    background-color: rgb(99, 99, 99);
+}
+#form_name_container {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+}
+#form_name {
+    padding: 10px 0px 10px 30px;
+    width: 50%;
+}
+#form_last_name {
+    padding: 10px 0px 10px 30px;
+    width: 50%;
+    margin-left: 2px;
+}
+#form_email {
+    padding: 10px 0px 10px 30px;
+    width: 100%;
+}
+#form_tel {
+    padding: 10px 0px 10px 30px;
+    width: 100%;
+}
+#form_text {
+    padding: 10px 0px 10px 30px;
+    width: 100%;
+}
+input {
+    width: 100%;
+    height: 15px;
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+}
+#form_button {
+    font-family: champagne,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(230, 0, 0);
+    margin-top: 20px;
+    color: #fff;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+#form_button:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+
+
+@media(max-width: 768px) {
+    #form_name_container {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #form_name {
+        padding: 10px 0px 10px 30px;
+        width: 100%;
+    }
+    #form_last_name {
+        padding: 10px 0px 10px 30px;
+        width: 100%;
+        margin-left: 0;
+    }
+    #form_box_name {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
